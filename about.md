@@ -7,6 +7,10 @@ comments: false
 ---
 
 My name is Jonathan, ctf player, htb and occasional bug hunter. Currently working as a cybersecurity analyst.
+<figure>
+<div align="center"> <script src="https://www.hackthebox.eu/badge/299288"></script></div>
+</figure>
+
 
 **may u needs ✨**
 

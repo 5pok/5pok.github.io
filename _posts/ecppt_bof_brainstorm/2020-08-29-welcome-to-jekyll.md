@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Preparacion eCPPT - Buffer overflow Brainpan ruby y python"
+title:  "Preparacion eCPPT - Buffer overflow Brainstorm ruby y python"
 date:   2021-10-16 09:29:20 +0700
 categories: jekyll update
 ---
