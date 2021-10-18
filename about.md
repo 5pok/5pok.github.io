@@ -6,7 +6,7 @@ excerpt: Hello peeps, I'm student of computer science from Banyuwangi, living in
 comments: false
 ---
 
-My name is Jonathan, ctf player, htb and occasional bug hunter. Currently working as a cybersecurity analyst.
+My name is Jonathan, ctf player, htb and occasional bug hunter From Chile 🇨🇱. Currently working as a cybersecurity analyst.
 <figure>
 <div align="center"> <script src="https://www.hackthebox.eu/badge/299288"></script></div>
 </figure>

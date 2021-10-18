@@ -1,10 +1,15 @@
 ---
 layout: post
-title:  "Preparacion eCPPT - Buffer overflow Brainpan ruby y python2"
-date:   2021-10-16 09:29:20 +0700
-categories: jekyll update
+title:  "Automatizacion para Bug Bounty"
+date:   2021-10-17 09:29:20 +0700
+categories: axiom rengine bugbounty
 ---
-Este walkthrough muestra el paso a paso para explotar una vulnerabilidad de tipo stack buffer overflow utilizando un laboratorio de tryhackme (Brainpan) como objetivo. Ejercicio practico de simulacion para el examen de OSCP o eCPTT.
+Es requerida una cuenta de Digital ocean para poder realizar todas las pruebas sin costo.
+
+Aqui incluir Axiom, Rengine, ettttttc.
+
+
+
 
 Conectar VPN de Tryhackme `openvpn 5pok.ovpn` y realizar un ping a la maquina vulnerable `ping -c 1 10.10.23.157`
 
