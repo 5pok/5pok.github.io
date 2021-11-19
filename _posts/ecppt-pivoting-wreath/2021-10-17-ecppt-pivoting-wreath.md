@@ -10,7 +10,7 @@ categories: jekyll update
 
 Este walkthrough muestra el paso a paso para explotar un laboratorio de tryhackme (Wreath), utilizado como entrenamiento para preparar el examen de OSCP o eCPTT.
 
-Conectar VPN de Tryhackme `sudo openvpn 5pok.ovpn` y realizar un ping a la maquina vulnerable `ping -c 1 10.10.8.78`
+Conectar VPN de Tryhackme `sudo openvpn 5pok.ovpn` y realizar un ping a la maquina vulnerable `ping -c 1 10.10.8.78`a
 
 
 A.- Recon: Utilizar [Rustscan][rustscan] para empezar la fase de recon.
