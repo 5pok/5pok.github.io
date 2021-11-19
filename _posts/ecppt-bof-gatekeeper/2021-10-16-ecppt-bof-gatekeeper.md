@@ -5,7 +5,7 @@ date:   2021-10-16 09:29:20 +0700
 categories: jekyll update
 ---
 <figure>
-<img src="/assets/img/ogp.png" alt="Gatekeeper">
+<img src="/assets/img/Gatekeeper.png" alt="Gatekeeper">
 </figure>
 
 Este walkthrough muestra el paso a paso para explotar una vulnerabilidad de tipo stack buffer overflow utilizando un laboratorio de tryhackme (Gatekeeper) como objetivo. Ejercicio practico de simulacion para el examen de OSCP o eCPTT.
@@ -299,7 +299,7 @@ Luego en inmmunity debugger calculamos el Offset, basado en el registro EIP 3965
 `!mona findmsp -distance 1000`
 
 <figure>
-<img src="finddistance.png" alt="finddistance">
+<img src="/assets/img/finddistance.png" alt="finddistance">
 </figure> 
 
 En este caso es 146 el numero de caracteres necesarios para crashear el programa. Con esta info. podemos comenzar a escribir el codigo. En este caso usaremos el lenguaje de programacion Ruby
@@ -326,7 +326,7 @@ Ahora ejecutaremos el codigo para ver si tenemos el control del registro EIP, en
 {% endhighlight %} 
 
 <figure>
-<img src="4242.png" alt="4242">
+<img src="/assets/img/4242.png" alt="4242">
 </figure>  
 
 E.- Bad Characters:
@@ -348,7 +348,7 @@ TCPSocket.open("10.0.69.5","31337") { |s| s.puts buff }
 Nota: el byte “\x00” siempre es nulo, pero en gatekeeper tambien podemos ver otro caracter nulo, es el “\x0a”, para identificarlo vamos al registro ESP y apretamos en follow in dump, este caracter aparece como 00 en la memoria, por eso debemos sacarlo al momento de generar el shellcode
 
 <figure>
-<img src="bad1.png" alt="bad1">
+<img src="/assets/img/bad1.png" alt="bad1">
 </figure>  
 
 Entonces el payload sin el 2da bad character quedaria asi:
@@ -374,7 +374,7 @@ Ahora hay que buscar un modulo que permita saber la ubicacion del JMP ESP, espec
 `!mona jmp -r esp -cpb "\x00\x0a"`
 
 <figure>
-<img src="module.png" alt="module">
+<img src="/assets/img/module.png" alt="module">
 </figure>   
 
 La direccion de memoria 080414c3 pasarla a formato Little Endian:
