@@ -5,7 +5,7 @@ date:   2021-10-17 09:29:20 +0700
 categories: jekyll update
 ---
 <figure>
-<img src="wreath.png" alt="wreath">
+<img src="/assets/img/wreath.png" alt="wreath">
 </figure>
 
 Este walkthrough muestra el paso a paso para explotar un laboratorio de tryhackme (Wreath), utilizado como entrenamiento para preparar el examen de OSCP o eCPTT.
