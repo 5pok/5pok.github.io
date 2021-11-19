@@ -5,7 +5,7 @@ date:   2021-10-16 09:29:20 +0700
 categories: jekyll update
 ---
 <figure>
-<img src="/ecppt-bof-gatekeeper/Gatekeeper.png" alt="Gatekeeper">
+<img src="/_posts/ecppt-bof-gatekeeper/Gatekeeper.png" alt="Gatekeeper">
 </figure>
 
 Este walkthrough muestra el paso a paso para explotar una vulnerabilidad de tipo stack buffer overflow utilizando un laboratorio de tryhackme (Gatekeeper) como objetivo. Ejercicio practico de simulacion para el examen de OSCP o eCPTT.
