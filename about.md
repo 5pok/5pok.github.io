@@ -14,6 +14,6 @@ My name is Jonathan, ctf player, htb and occasional bug hunter From Chile 🇨�
 
 **may u needs ✨**
 
-- [htb.eu](http://now.sh)
-- [hackerone.com](http://now.sh)
-- [github.com](http://now.sh)
+- <img src="../htbl2.png" alt="htbicon"> [htb.eu](https://app.hackthebox.eu/profile/299288) 
+- <img src="../h1l.png" alt="h1logo"> [hackerone.com](https://hackerone.com/5pok?type=user) 
+- <img src="../gitl.png" alt="githublogo"> [github.com](https://github.com/5pok) 
