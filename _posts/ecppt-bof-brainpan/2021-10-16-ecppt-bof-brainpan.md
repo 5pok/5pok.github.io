@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 
 <figure>
-<img src="brainpanthm.png" alt="brainpanthm">
+<img src="/assets/img/brainpanthm.png" alt="brainpanthm">
 </figure>
 
 Este walkthrough muestra el paso a paso para explotar una vulnerabilidad de tipo stack buffer overflow utilizando un laboratorio de tryhackme (Brainpan) como objetivo. Ejercicio practico de simulacion para el examen de OSCP o eCPTT.
@@ -107,7 +107,7 @@ bin                     [Status: 301, Size: 0, Words: 1, Lines: 1] <------------
 {% endhighlight %}  
 
 <figure>
-<img src="11.png" alt="11">
+<img src="/assets/img/11.png" alt="11">
 </figure> 
 
 Ahora probar conexion con telnet al puerto 9999.
@@ -184,11 +184,11 @@ _|_|_|    _|          _|_|_|  _|  _|    _|  _|_|_|      _|_|_|  _|    _|
 {% endhighlight %} 
 
 <figure>
-<img src="12.png" alt="12">
+<img src="/assets/img/12.png" alt="12">
 </figure> 
 
 <figure>
-<img src="13.png" alt="13">
+<img src="/assets/img/13.png" alt="13">
 </figure> 
 
 C.- Offset:
@@ -225,7 +225,7 @@ Luego en inmmunity debugger calculamos el Offset, basado en el registro EIP 3572
 `!mona findmsp -distance 1000`
 
 <figure>
-<img src="monafindmsp.png" alt="monafindmsp">
+<img src="/assets/img/monafindmsp.png" alt="monafindmsp">
 </figure> 
 
 En este caso es 524 el numero de caracteres necesarios para crashear el programa. Con esta info. podemos comenzar a escribir el codigo
@@ -267,7 +267,7 @@ OK...
 {% endhighlight %} 
 
 <figure>
-<img src="eip4242.png" alt="eip4242">
+<img src="/assets/img/eip4242.png" alt="eip4242">
 </figure>  
 
 E.- Bad Characters:
@@ -277,7 +277,7 @@ Para validar los badchars, usaremos mona para crear un bytearray. El parametro -
 `!mona bytearray -b "\x00"`
 
 <figure>
-<img src="monabyte.png" alt="monabyte">
+<img src="/assets/img/monabyte.png" alt="monabyte">
 </figure>   
 
 Copiamos los badchars y los pegamos en nuestro payload:
@@ -321,13 +321,13 @@ except:
 Verificamos que no hay algun x00 con `!mona compare -f C:\mona\brainpan\bytearray.bin -a 005FF920` o hacerlo manual con Follow in dump en ESP y buscar algun 00. Si no funciona !mona compare, probar con `!mona config -set workingfolder c:\mona\%p` o abrir inmunnity en modo administrador.
 
 <figure>
-<img src="badchars1.png" alt="badchars1">
+<img src="/assets/img/badchars1.png" alt="badchars1">
 </figure>   
 
 Este mensaje significa que no hay badchars en los chars que mandamos:
 
 <figure>
-<img src="badchars2.png" alt="badchars2">
+<img src="/assets/img/badchars2.png" alt="badchars2">
 </figure>                                                                                                                   
 
 F.- Module:
@@ -337,7 +337,7 @@ Ahora hay que buscar un modulo que permita saber la ubicacion del JMP ESP con:
 `!mona jmp -r esp -cpb "\x00"`
 
 <figure>
-<img src="jmpesp.png" alt="jmpesp">
+<img src="/assets/img/jmpesp.png" alt="jmpesp">
 </figure>   
 
 La direccion de memoria 311712f3 pasarla a formato Little Endian:
