@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Automatizacion para Bug Bounty"
-date:   2021-10-17 09:29:20 +0700
+date:   2021-10-15 09:29:20 +0700
 categories: axiom rengine bugbounty
 ---
 Es requerida una cuenta de Digital ocean para poder realizar todas las pruebas sin costo.

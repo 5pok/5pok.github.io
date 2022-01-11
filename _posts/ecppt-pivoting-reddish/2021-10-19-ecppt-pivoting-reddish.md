@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[eCPPT/OSCP Style] - Pivoting Reddish"
-date:   2021-10-17 09:29:20 +0700
+date:   2021-10-19 09:29:20 +0700
 categories: jekyll update
 ---
 <figure>
