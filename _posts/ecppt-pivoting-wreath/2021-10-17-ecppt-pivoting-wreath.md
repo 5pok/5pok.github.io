@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[eCPPT/OSCP Style] - Pivoting Wreath"
+title:  "[eCPPT Style] - Pivoting Wreath"
 date:   2021-10-17 09:29:20 +0700
 categories: jekyll update
 ---
