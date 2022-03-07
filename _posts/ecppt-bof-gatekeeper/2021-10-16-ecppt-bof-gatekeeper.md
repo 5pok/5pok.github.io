@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[eCPPT/OSCP Style] - Buffer overflow Gatekeeper.rb"
+title:  "[eCPPT Style] - Buffer overflow Gatekeeper.rb"
 date:   2021-10-16 09:29:20 +0700
 categories: jekyll update
 ---
