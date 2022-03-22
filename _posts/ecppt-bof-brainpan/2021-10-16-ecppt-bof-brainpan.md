@@ -193,11 +193,11 @@ _|_|_|    _|          _|_|_|  _|  _|    _|  _|_|_|      _|_|_|  _|    _|
 
 C.- Offset:
 
-Para calcular el offset utilizaremos mona, con este comando podemos definir la carpeta por defecto
+Para calcular el offset utilizaremos mona, con este comando podemos definir la carpeta por defecto.
 
 `!mona config -set workingfolder c:\mona\%p`
 
-Luego crear un pattern con mona de 1000 caracteres
+Luego crear un pattern con mona de 1000 caracteres.
 
 `!mona pattern_create 1000`
 
